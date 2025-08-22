@@ -30,7 +30,7 @@
 
       <div class="login-right">
         <div class="login-logo mb-30">
-            <img src="{{ asset('images/logo/logo-unsri-hitam.png') }}" alt="Logo CBT Universitas Sriwijaya">
+            <img src="{{ asset('images/logo/logo-unsri.png') }}" alt="Logo CBT Universitas Sriwijaya">
         </div>
         <h2>Log in</h2>
 
