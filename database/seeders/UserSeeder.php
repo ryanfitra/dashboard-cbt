@@ -15,18 +15,34 @@ class UserSeeder extends Seeder
     {
         $data = [
             [
-                'name' => 'Admin CBT',
+                'nama' => 'Admin CBT',
                 'email' => 'admin_cbt@unsri.ac.id',
-                'username' => 'admin_cbt',
                 'role' => 'admin',
                 'password' => bcrypt('Eleunsri*#*#'), // password di-hash
             ],
             [
-                'name' => 'Peserta CBT',
+                'nama' => 'Peserta CBT',
                 'email' => 'peserta_cbt@unsri.ac.id',
-                'username' => 'peserta_cbt',
                 'role' => 'peserta',
                 'password' => bcrypt('Eleunsri*#*#'), // password di-hash
+                'nik' => '1234567890123456',
+                'warga_negara' => 'WNI',
+                'jenis_kelamin' => 'L',
+                'tempat_lahir' => 'Palembang',
+                'tanggal_lahir' => '2000-01-01',
+                'alamat' => 'Jl. Gandus',
+                'alamat_provinsi' => 'Prop. Sumatera Selatan',
+                'kode_provinsi' => '110000',
+                'alamat_kabupaten' => 'Kota Palembang ',
+                'kode_kabupaten' => '116000',
+                'alamat_kecamatan' => 'Kec. Gandus',
+                'kode_kecamatan' => '116012',
+                'agama' => 'Islam',
+                'no_wa' => '081234567890',
+                'wa_sender' => '081234567890',
+                'foto' => 'peserta1.jpg',
+                'pendidikan_terakhir' => 'SMA',
+                'ijazah' => 'ijazah_peserta1.pdf',
             ],
         ];
 

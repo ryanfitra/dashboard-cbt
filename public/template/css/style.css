@@ -1047,6 +1047,12 @@ code {
 .bg-none {
   background: none !important; }
 
+.bg-blur {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* 🔹 kasih blur */
+}
 @media (max-width: 991px) {
   .bg-none-lg {
     background: none !important; } }
@@ -28453,7 +28459,9 @@ ul.flexbox {
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 0; }
+  z-index: 0;
+  overflow: hidden;}
+
 
 .box.bg-img, .box .bg-img {
   border-radius: 10px; }
@@ -31961,3 +31969,112 @@ img.away, img.busy, img.offline, img.online {
   z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* ================================
+   Custom Login Page Style
+   ================================ */
+body.login-page {
+    background:  url("../../images/auth-bg/bg-10.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.login-wrapper {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.login-right {
+    position: relative; /* penting biar anak bisa di-absolute */
+    flex:1;
+    padding: 40px 40px 80px 40px;
+    background: #fff;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 🔹 konten di tengah vertical */
+}
+
+.login-right h2 {
+    color: #0d1b3d;
+    margin-bottom: 20px;
+}
+
+
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #001d4a, #2069b1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.login-left h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.btn-custom {
+    background: #003366;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #001d4a;
+}
+
+.input-group-text {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 12px;
+}
+
+.form-control {
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #ddd;
+    border-left: none;
+    padding: 10px 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.login-logo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.login-logo img {
+    max-width: 60px; /* atur sesuai kebutuhan */
+    height: auto;
+}
