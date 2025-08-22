@@ -6,8 +6,8 @@
 			  <!-- sidebar menu-->
 			  <ul class="sidebar-menu" data-widget="tree">	
 				<li class="header">Dashboard & Apps</li>
-				<li class="{{request()->routeIs('peserta.dashboard') ? 'active' : ''}}">
-					<a href="{{route('peserta.dashboard')}}">
+				<li class="{{request()->routeIs('admin.dashboard') ? 'active' : ''}}">
+					<a href="{{route('admin.dashboard')}}">
 						<i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>
 						<span>Dashboard</span>
 						<span class="pull-right-container">
