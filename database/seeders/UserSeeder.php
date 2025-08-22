@@ -16,15 +16,15 @@ class UserSeeder extends Seeder
         $data = [
             [
                 'name' => 'Admin CBT',
-                'username' => 'admin_cbt',
                 'email' => 'admin_cbt@unsri.ac.id',
+                'username' => 'admin_cbt',
                 'role' => 'admin',
                 'password' => bcrypt('Eleunsri*#*#'), // password di-hash
             ],
             [
                 'name' => 'Peserta CBT',
-                'username' => 'peserta_cbt',
                 'email' => 'peserta_cbt@unsri.ac.id',
+                'username' => 'peserta_cbt',
                 'role' => 'peserta',
                 'password' => bcrypt('Eleunsri*#*#'), // password di-hash
             ],
