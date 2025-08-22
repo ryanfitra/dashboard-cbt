@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>CBT Universitas Sriwijaya - Log in </title>
+  <title>CBT Universitas Sriwijaya - Sign in </title>
 
   <!-- Vendors Style-->
   <link rel="stylesheet" href="{{ asset('template/css/vendors_css.css') }}">
@@ -25,14 +25,14 @@
       <div class="login-left">
           <h1>WELCOME !</h1>
           <h3>CBT Universitas Sriwijaya</h3>
-          <p>Log in to continue</p>
+          <p>Sign in to continue</p>
       </div>
 
       <div class="login-right">
         <div class="login-logo mb-30">
             <img src="{{ asset('images/logo/logo-unsri.png') }}" alt="Logo CBT Universitas Sriwijaya">
         </div>
-        <h2>Log in</h2>
+        <h2>Sign in</h2>
 
         <form method="POST" action="{{ route('login') }}">
           @csrf
@@ -63,7 +63,7 @@
               <a href="#" class="text-muted">Forgot your password?</a>
           </div> --}}
 
-          <button type="submit" class="btn btn-custom">Log In</button>
+          <button type="submit" class="btn btn-custom">Sign In</button>
 
           {{-- <p class="mt-3">Don't have an account? <a href="{{ route('register') }}">Sign Up</a></p> --}}
         </form>
