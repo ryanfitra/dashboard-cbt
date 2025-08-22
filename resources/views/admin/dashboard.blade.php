@@ -12,7 +12,7 @@ Dashboard Admin
                         <div class="col-12 col-lg-3"><img src="images/images/svg-icon/color-svg/custom-14.svg" alt="">
                         </div>
                         <div class="col-12 col-lg-9">
-                            <h2>Hello {{auth()->user()->name}}, Welcome Back!</h2>
+                            <h2>Halo {{auth()->user()->name}}, Welcome Back!</h2>
                             <p class="text-dark mb-0 fs-16">
 
                             </p>
